@@ -195,6 +195,7 @@ done
 # preparation steps
 sudo apt-get update
 create_dirs
+basic_apps
 # install selected apps
 for i in ${!tools[@]}; do
     [[ "${choices[i]}" ]] && { eval "${tools[i]}" msg=""; }
